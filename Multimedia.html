@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+</head>
+<body onload="f1();">
+    <h1>Multimedia</h1>
+
+    <h2>SVG</h2>
+        <svg height="100" width="200">
+        <rect id="myRect" height="100" width="200" fill="blue" /></svg>
+        <p>SVG - Scalar Vector, good for scaling. Maintains quality with scale.</p>
+
+    <h2>Canvas</h2>
+        <canvas id="myCanvas" width="200" height="100"></canvas>    
+        <script>
+	    function f1()
+	    {
+		    var canvas = document.getElementById("myCanvas");
+		    context = canvas.getContext("2d");
+		    context.fillStyle = "rgb(0,255,0)";
+		    context.fillRect(0,0,200,100);
+	    }
+        </script>
+        <p>
+            Allows runtime interactivity with graphics like animations.
+            Raster based so not good for scaling.
+        </p>
+
+    <h2>Audio</h2>
+        <audio src="Audio\SampleAudio.wav" controls loop></audio>
+
+    <h2>Video</h2>
+        <video src="Video\SampleVideo.mp4" height="300" width="500" controls loop></video>
+        <p>Note: The controls provided for the audio and video are browser specific.</p>
+    
+    <footer><small>Copyright &copy; 2017.</small></footer>
+</body>
+</html>
