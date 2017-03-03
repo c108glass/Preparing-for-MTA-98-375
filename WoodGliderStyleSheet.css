@@ -1,0 +1,7 @@
+﻿h1 {color:red; text-align:center; font-family:Miriam}
+h2 {color:blue; text-align:center;font-family:Miriam}
+h3 {text-align:center; font-family:Miriam}
+p {text-align: center; font-family:Miriam}
+body {background-image:url('Images/WoodGlider/skybackground.jpg')}
+figure {text-align:center}
+video {display:block; margin:auto}
